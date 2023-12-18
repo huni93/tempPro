@@ -12,8 +12,8 @@
   
   
   <servlet>
-   <servlet-name>path</servlet-name>
-   <servlet-class>ch12.controllerUsingURI</servlet-class>
+   <servlet-name>member</servlet-name>
+   <servlet-class>controller.MemberController</servlet-class>
    <init-param>
    <param-name>configFile</param-name>
    <param-value>/WEB-INF/commandHandler.properties</param-value>
@@ -21,7 +21,7 @@
    </servlet>
    
   <servlet-mapping>
-  <servlet-name>path</servlet-name>
+  <servlet-name>member</servlet-name>
   <url-pattern>/member/*</url-pattern>
   </servlet-mapping>
   

@@ -14,9 +14,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import handler.CommandHandler;
+import handler.NullHandler;
+
 
 /*@WebServlet("/bbb")*/
-public class controllerUsingURI extends HttpServlet {
+public class MemberController extends HttpServlet {
 // <커맨드, 핸들러인스턴스> 매핑 정보 저장
 private Map<String, CommandHandler> CommandHandlerMap =
         new HashMap<>();
